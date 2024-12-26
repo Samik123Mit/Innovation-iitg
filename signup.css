@@ -1,0 +1,134 @@
+/* General Styles */
+
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    /* background-color: #007bff; */
+    font-family: "ABeeZee";
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: white;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 90%;
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.info {
+    flex: 1;
+    background-color: #5CB6F9;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.illustration img {
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.illustration p {
+    font-size: 18px;
+}
+
+.form-container {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #333;
+}
+
+.form-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+}
+
+form label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    /* \ border: 1px solid #ddd;
+    border-radius: 5px; */
+    font-size: 14px;
+    border: 2px solid #d8d8d8;
+}
+
+form button {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+form button:hover {
+    background: #357ab8;
+}
+
+form p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .info {
+        border-radius: 10px 10px 0 0;
+    }
+    .form-container {
+        border-radius: 0 0 10px 10px;
+        padding: 20px;
+    }
+}

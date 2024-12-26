@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="parent">
+            <!-- Home icon -->
+            <!-- This is the left side of the login page   -->
+            <div class="left">
+                <img src="image.png" alt="meeting" />
+                <p class="left-text">Still Confused with Career Choice?</p>
+            </div>
+
+            <!-- This is the right side of the login page   -->
+            <div class="right">
+                <h1 class="counsellor">She Leads</h1>
+                <div class="sign-in">Log in to your account</div>
+
+                <!-- Login form -->
+                <div class="form">
+                    <label for="email">User Name</label>
+                    <input id="email" type="text" placeholder="Email" class="inputField" />
+                    <small class="errorMsg" id="emailError">Email is Required</small>
+
+                    <label for="password">Password</label>
+                    <div class="password-input">
+                        <input id="password" type="password" placeholder="Password" class="inputField" />
+                        <div class="toggle-button" onclick="passwordToggle()">
+                            <img id="passwordToggleIcon" height="20" width="20" src="hide.png" alt="password-toggle" />
+                        </div>
+                    </div>
+                    <small class="errorMsg" id="passwordError">Password is Required</small>
+                    <small class="errorMsg" id="incorrectPasswordError">Incorrect Password</small>
+
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember-me" />
+                        <label for="remember-me"> Remember me</label>
+                    </div>
+                    <div class="btn">
+                        <button class="login_btn" onclick="handleSignIn()">Login</button>
+                        <a href="forgotpassword.html" class="forgot-password">Forgot Your password?</a>
+                    </div>
+                    <div class="dont-have-account">
+                        <a href="signup.html" class="forgot-password">Don't have an account?</a>
+                    </div>
+                    <div class="get-app">
+                        <div class="get-app-title">Get the app.</div>
+                        <div class="apps">
+                            <a href="login.html"><img class="microsoft-logo" src="microsoft.png" alt="Microsoft Store" /></a>
+                            <a href="login.html"><img class="google-play-logo" src="google-play.png" alt="Google Play Store" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jav.js"></script>
+</body>
+
+</html>
